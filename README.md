@@ -5,9 +5,8 @@ A simple notifier app implemented using django channels
 
 Steps for installing the user notifier app. 
 
-•	Clone the repository to a directory 
-
-•	Create a virtual environment using virtualenv/virtualenvwrapper and install the python packages in requirement.txt using pip or easy-install.
+* Clone the repository to a directory.
+* Create a virtual environment using virtualenv/virtualenvwrapper and install the python packages in requirement.txt using pip or easy-install.
 
 •	Install and start the Redis server (https://redis.io/). (Application uses Redis as the channel layer)
 
