@@ -3,14 +3,20 @@ A simple notifier app implemented using django channels
 
 ### Installation:
 
-Steps for installing the user notifier app. \n
+Steps for installing the user notifier app. 
+
 •	Clone the repository to a directory 
+
 •	Create a virtual environment using virtualenv/virtualenvwrapper and install the python packages in requirement.txt using pip or easy-install.
+
 •	Install and start the Redis server (https://redis.io/). (Application uses Redis as the channel layer)
+
 •	Migrate the db changes by running following commands (Here we have used SQLlite only so need to install any other database servers):
     - python manage.py makemigrations
     - python manage.py migrate
+    
 •	Create a super user using the command - python manage.py createsuperuser, and login to the admin panel.
+
 •	Start the server – python manage.py runserver. And open the default port in the browser ( http://localhost:8000/  ).
 
 ### App Features
