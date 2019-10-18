@@ -13,7 +13,7 @@ Steps for installing the user notifier app.
 * Clone the repository to a directory.
 * Create a virtual environment using virtualenv/virtualenvwrapper and install the python packages in requirement.txt using pip or easy-install.
 * Install and start the Redis server (https://redis.io/). (Application uses Redis as the channel layer)
-* Migrate the db changes by running following commands (Here we have used SQLlite only so need to install any other database servers):
+* Migrate the db changes by running following commands (Here we have used SQLlite only so no need to install any other database servers):
     * python manage.py makemigrations.
     * python manage.py migrate
 * Create a super user using the command - python manage.py createsuperuser, and login to the admin panel.
