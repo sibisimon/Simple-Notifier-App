@@ -1,8 +1,6 @@
 # Simple-Notifier-App
 A simple notifier app implemented using django channels
 
-USER NOTIFIER APP – Details
-
 Installation:
 
 Steps for installing the user notifier app.
