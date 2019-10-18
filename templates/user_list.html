@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3 class="main-head">SYSTEM USERS AND COMMENTS</h3>
+  <div class="row user-list">
+      <div class="col-md-6 col-lg-6 col-xs-12 bg-border">
+          <h5 class="user-header">Users</h5>
+          <ul class="list-group users">
+              {% for user in users %}
+              <li class="list-group-item" id="user_{{user.id}}">{{user.first_name }} {{user.last_name}} |
+                  <b>Username</b>: {{ user.username }}</li>
+              {% endfor %}
+          </ul>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xs-12 bg-border">
+          <h5 class="user-header">Comments</h5>
+          <ul class="list-group comments">
+          {% for comment in comments %}
+          <li class="list-group-item">
+              <p>{{ comment.comment }}<br><br><span>- <b>{{comment.user.username}}</b></span></p>
+          </li>
+          {% endfor %}
+      </ul>
+      </div>
+  </div>
+{% endblock %}
