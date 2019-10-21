@@ -27,9 +27,8 @@ The App will receive a notification when:
 3.	The user is deleted.
 4.	A comment is added by the user.
 
-### How to test the user-notified app ?
+### How to test the user-notifier app ?
 
-The below steps provide the details for testing the application after implementation.
 * Take the Notifier App (http://localhost:8000/)  and  Admin panel (http://localhost:8000/admin/) side by side.
 * Add/Delete/Update user details from the admin panel, verify whether the notification is received in the Notifier App and the details are updated in the list section.
 * Add a comment from the UserComment Section from admin, verify whether notification is received and the comment section is updated.
